@@ -1,114 +1,123 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mensagem Especial</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-image: url('floral.avif'); /* Imagem de fundo floral */
-            background-size: cover; /* Faz com que a imagem cubra todo o fundo */
-            background-position: center;
-            margin: 0;
-            padding: 0;
-            color: #333;
-            text-align: center;
-        }
-        h2 {
-            color: #e91e63;
-            font-size: 36px;
-            margin-top: 40px;
-            font-weight: bold;
-            margin-bottom: 30px;
-        }
-        p {
-            font-size: 18px;
-            line-height: 1.8;
-            margin-bottom: 20px;
-            color: #333;
-        }
-        .highlight {
-            color: #ff4081;
-            font-weight: bold;
-            font-size: 22px;
-            margin-top: 30px;
-        }
-        em {
-            color: #f8b6d9;
-        }
-        .container {
-            position: relative;
-            max-width: 600px;
-            margin: 40px auto;
-            padding: 30px;
-            background-color: rgba(255, 255, 255, 0.7); /* Fundo mais suave e claro */
-            border-radius: 15px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-            text-align: left;
-            color: #333; /* Texto em tom escuro para contraste suave */
-        }
-        .container p {
-            color: #333; /* Texto escuro para contraste */
-            margin-bottom: 20px;
-        }
-        .container h2 {
-            color: #e91e63;
-            font-size: 36px;
-            text-align: center;
-        }
-        .top-photos {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin: 30px 0;
-        }
-        .top-photos img {
-            width: 30%; /* Reduzido para 30% do tamanho original */
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .caption {
-            font-size: 14px;
-            color: #888;
-            font-style: italic;
-            margin-top: 10px;
-            text-align: center;
-        }
-        .caption2 {
-            font-size: 14px;
-            color: #888;
-            font-style: italic;
-            margin-top: 10px;
-            text-align: center;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mensagem Especial</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-image: url('floral.avif');
+      background-size: cover;
+      background-position: center;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      text-align: center;
+    }
+    h2 {
+      color: #e91e63;
+      font-size: 36px;
+      margin-top: 40px;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+    p {
+      font-size: 18px;
+      line-height: 1.8;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    .highlight {
+      color: #ff4081;
+      font-weight: bold;
+      font-size: 22px;
+      margin-top: 30px;
+    }
+    em {
+      color: #f8b6d9;
+    }
+    .container {
+      position: relative;
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 30px;
+      background-color: rgba(255, 255, 255, 0.7);
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      text-align: left;
+      color: #333;
+    }
+    .container p {
+      margin-bottom: 20px;
+    }
+    .container h2 {
+      text-align: center;
+    }
+
+    .top-photos {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin: 30px 0;
+    }
+    .top-photos div {
+      flex: 1 1 120px;
+      max-width: 45%;
+    }
+    .top-photos img {
+      width: 100%;
+      max-width: 160px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .caption, .caption2 {
+      font-size: 14px;
+      color: #888;
+      font-style: italic;
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      .top-photos {
+        flex-direction: column;
+        align-items: center;
+      }
+      .top-photos div {
+        max-width: 80%;
+      }
+      .top-photos img {
+        max-width: 220px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <!-- Imagens lado a lado -->
-    <div class="top-photos">
-        <div>
-            <img src="us1.jpg" alt="Foto 1" class="top-photo">
-            <div class="caption">
-                (fazendo o que você mais gosta, vendo futebol e proseando kkkk)
-            </div>
-        </div>
-        <div>
-            <img src="us2.jpg" alt="Foto 2" class="top-photo">
-            <div class="caption2">
-                Ohana ❤️
-            </div>
-        </div>
+  <div class="top-photos">
+    <div>
+      <img src="us1.jpg" alt="Foto 1" class="top-photo">
+      <div class="caption">
+        (fazendo o que você mais gosta, vendo futebol e proseando kkkk)
+      </div>
     </div>
+    <div>
+      <img src="us2.jpg" alt="Foto 2" class="top-photo">
+      <div class="caption2">
+        Ohana ❤️
+      </div>
+    </div>
+  </div>
 
-    <div class="container">
-        <h2>Feliz Dia das Mães, meu amor! 💖</h2>
-        <p>Meu amor, que alegria você ter chegado até aqui! 🎉</p>
-        <p>Hoje é o dia da mulher mais incrível que eu conheço — forte, carinhosa e absolutamente essencial na minha vida e na da nossa Cecília. Você é nosso porto seguro, nosso amor em forma de gente, e a mãe mais maravilhosa que eu poderia sonhar para nossa filha.</p>
-        <p>O plano inicial era simples: você escaneava o QR Code e, magicamente, seus R$ 500 caíam na conta. Mas, a tecnologia ainda não chegou nesse nível de magia... ainda!</p>
-        <p>Bom, pelo menos eu tenho mais uma chance para te dizer o quanto eu te amo e o quanto você é fundamental para nós. Você é, sem dúvida, a melhor mãe do mundo — cuidadosa, amorosa, protetora e maravilhosa em todos os sentidos.</p>
-        <p>Para agradecer por tudo que você faz por nós, preparei esse presente especial — simbólico, mas cheio de amor. Que você aproveite o seu dia de forma maravilhosa, ao lado da nossa neném encantadora, e que o presente te dê um tempinho para fazer algo que você ama e que seja só para você.</p>
-        <p class="highlight">Te amamos infinitamente! 😍💖</p>
-    </div>
+  <div class="container">
+    <h2>Feliz Dia das Mães, meu amor! 💖</h2>
+    <p>Meu amor, que alegria você ter chegado até aqui! 🎉</p>
+    <p>Hoje é o dia da mulher mais incrível que eu conheço — forte, carinhosa e absolutamente essencial na minha vida e na da nossa Cecília. Você é nosso porto seguro, nosso amor em forma de gente, e a mãe mais maravilhosa que eu poderia sonhar para nossa filha.</p>
+    <p>O plano inicial era simples: você escaneava o QR Code e, magicamente, seus R$ 500 caíam na conta. Mas, a tecnologia ainda não chegou nesse nível de magia... ainda! 🪄</p>
+    <p>Bom, pelo menos eu tenho mais uma chance para te dizer o quanto eu te amo e o quanto você é fundamental para nós. Você é, sem dúvida, a melhor mãe do mundo — cuidadosa, amorosa, protetora e maravilhosa em todos os sentidos. 👩‍👧‍👦💗</p>
+    <p>Para agradecer por tudo que você faz por nós, preparei esse presente especial — simbólico, mas cheio de amor. Que você aproveite o seu dia de forma maravilhosa, ao lado da nossa neném encantadora, e que o presente te dê um tempinho para fazer algo que você ama e que seja só para você. 🛀📖☕</p>
+    <p class="highlight">Te amamos infinitamente! 😍💖</p>
+  </div>
 </body>
 </html>
